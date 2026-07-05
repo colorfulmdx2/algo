@@ -4,7 +4,7 @@ type NumArray struct {
 	prefixArray []int
 }
 
-func Constructor(nums []int) NumArray {
+func NewArray(nums []int) NumArray {
 	arr := make([]int, len(nums)+1)
 
 	for i, e := range nums {

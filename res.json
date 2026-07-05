@@ -1,0 +1,1547 @@
+[
+  {
+    "id": 1707734,
+    "component": "bsTracking",
+    "platform": "all",
+    "authMode": "all",
+    "version": 1,
+    "content": {
+      "links": {
+        "type": "wrapper",
+        "items": [
+          {
+            "id": {
+              "type": "number",
+              "value": 1
+            },
+            "type": "child",
+            "content": {
+              "url": {
+                "type": "string",
+                "label": "Трекинговая ссылка",
+                "value": "https://cs.frontend.weborama.fr/cs?account_id=2337&ids=483852"
+              },
+              "order": {
+                "type": "order",
+                "value": [
+                  "url"
+                ]
+              }
+            }
+          }
+        ],
+        "label": "Трекинговые ссылки"
+      },
+      "order": {
+        "type": "order",
+        "value": [
+          "links"
+        ]
+      }
+    }
+  },
+  {
+    "id": 1707735,
+    "component": "bsLandMenu",
+    "platform": "all",
+    "authMode": "all",
+    "version": 4,
+    "content": {
+      "items": {
+        "type": "wrapper",
+        "items": [
+          {
+            "id": {
+              "type": "number",
+              "value": 1
+            },
+            "type": "child",
+            "content": {
+              "href": {
+                "type": "linkByPlatform",
+                "label": "Ссылка, куда ведёт пункт меню",
+                "value": [
+                  {
+                    "value": "",
+                    "platform": "iOS"
+                  },
+                  {
+                    "value": "",
+                    "platform": "Android"
+                  },
+                  {
+                    "value": "",
+                    "platform": "Web"
+                  }
+                ]
+              },
+              "order": {
+                "type": "order",
+                "value": [
+                  "title",
+                  "href",
+                  "anchor"
+                ]
+              },
+              "title": {
+                "type": "string",
+                "label": "Текст пункта меню",
+                "value": "Объекты"
+              },
+              "anchor": {
+                "type": "string",
+                "label": "Якорь",
+                "value": "1"
+              }
+            }
+          },
+          {
+            "id": {
+              "type": "number",
+              "value": "items_m1kw5nz1"
+            },
+            "type": "child",
+            "content": {
+              "href": {
+                "type": "linkByPlatform",
+                "label": "Ссылка, куда ведёт пункт меню",
+                "value": [
+                  {
+                    "value": "",
+                    "platform": "iOS"
+                  },
+                  {
+                    "value": "",
+                    "platform": "Android"
+                  },
+                  {
+                    "value": "",
+                    "platform": "Web"
+                  }
+                ]
+              },
+              "order": {
+                "type": "order",
+                "value": [
+                  "title",
+                  "href",
+                  "anchor"
+                ]
+              },
+              "title": {
+                "type": "string",
+                "label": "Текст пункта меню",
+                "value": "О Застройщике"
+              },
+              "anchor": {
+                "type": "string",
+                "label": "Якорь",
+                "value": "2"
+              }
+            }
+          }
+        ],
+        "label": "Пункты меню"
+      },
+      "order": {
+        "type": "order",
+        "value": [
+          "isRedesigned",
+          "logoSrc",
+          "hideMobileAvitoLogo",
+          "mobileLogoSrc",
+          "items",
+          "enablePhoneButton",
+          "defaultPhone",
+          "phoneType",
+          "developerCompanyGroupId",
+          "showConsultationForm",
+          "clickableLogo",
+          "enableTnsBlock",
+          "userHash"
+        ]
+      },
+      "logoSrc": {
+        "type": "url",
+        "label": "Логотип",
+        "value": "https://www.avito.st/static/b2b-hub/images/EbchIoWSQ0qL6YZlYpqf4DxlhsFMV1uHg4Lgrv8h.png"
+      },
+      "platform": {
+        "type": "dropdown",
+        "label": "Платформа",
+        "value": "all",
+        "values": [
+          {
+            "label": "Все",
+            "value": "all"
+          },
+          {
+            "label": "Только на десктопе",
+            "value": "desktop"
+          },
+          {
+            "label": "Только на мобильных устройствах",
+            "value": "mav"
+          }
+        ]
+      },
+      "userHash": {
+        "type": "string",
+        "label": "Hash пользователя для отображения T&S-блока",
+        "value": ""
+      },
+      "phoneType": {
+        "type": "dropdown",
+        "label": "Тип телефона",
+        "value": "",
+        "values": [
+          {
+            "label": "Не выбрано",
+            "value": ""
+          },
+          {
+            "label": "simple",
+            "value": "1"
+          },
+          {
+            "label": "anonymous",
+            "value": "2"
+          },
+          {
+            "label": "calltracking",
+            "value": "3"
+          }
+        ]
+      },
+      "defaultPhone": {
+        "type": "string",
+        "label": "Номер телефона на кнопке по умолчанию",
+        "value": ""
+      },
+      "isRedesigned": {
+        "type": "bool",
+        "label": "Редизайн",
+        "value": true
+      },
+      "clickableLogo": {
+        "type": "bool",
+        "label": "Включить переход на главную страницу при клике на логотип",
+        "value": false
+      },
+      "mobileLogoSrc": {
+        "type": "url",
+        "label": "Логотип для мобильной версии",
+        "value": "https://www.avito.st/static/b2b-hub/images/X2C96Tkox9tFrktuoCI8ZWfV2H3JGmEDmQt6yAOd.png"
+      },
+      "enableTnsBlock": {
+        "type": "bool",
+        "label": "Включить отображение T&S-блока",
+        "value": false
+      },
+      "enablePhoneButton": {
+        "type": "bool",
+        "label": "Включить кнопку с телефоном для этого блока",
+        "value": true
+      },
+      "hideMobileAvitoLogo": {
+        "type": "bool",
+        "label": "Скрыть логотип Авито в приложениях",
+        "value": true
+      },
+      "showConsultationForm": {
+        "type": "bool",
+        "label": "Включить кнопку с формой обратного звонка",
+        "value": true
+      },
+      "developerCompanyGroupId": {
+        "type": "string",
+        "label": "ID застройщика - Группы компаний",
+        "value": ""
+      }
+    }
+  },
+  {
+    "id": 1707736,
+    "component": "bsMainBanner",
+    "platform": "all",
+    "authMode": "all",
+    "version": 3,
+    "content": {
+      "order": {
+        "type": "order",
+        "value": [
+          "isRedesigned",
+          "slides",
+          "topLogo",
+          "topLogoWidth",
+          "topLogoHeight"
+        ]
+      },
+      "slides": {
+        "type": "wrapper",
+        "items": [
+          {
+            "id": {
+              "type": "number",
+              "value": "slides_lpbdu6bd"
+            },
+            "type": "child",
+            "content": {
+              "order": {
+                "type": "order",
+                "value": [
+                  "title",
+                  "description",
+                  "backgroundImageSrc",
+                  "backgroundImageSrc_4_3",
+                  "textColor",
+                  "contentBackgroundColor",
+                  "actionButtonText",
+                  "actionButtonHref",
+                  "showPhoneButton",
+                  "phone",
+                  "phoneType",
+                  "developerCompanyGroupId",
+                  "withShading",
+                  "showTimerAfterTitle",
+                  "fullTitleWidth",
+                  "descriptionDesktopWidth",
+                  "descriptionNarrowDesktopWidth"
+                ]
+              },
+              "phone": {
+                "type": "string",
+                "label": "Номер телефона на кнопке",
+                "value": ""
+              },
+              "title": {
+                "type": "multilineString",
+                "label": "Заголовок слайда",
+                "value": "Скидки до 12% \nна квартиры"
+              },
+              "phoneType": {
+                "type": "dropdown",
+                "label": "Тип телефона",
+                "value": "",
+                "values": [
+                  {
+                    "label": "Не выбрано",
+                    "value": ""
+                  },
+                  {
+                    "label": "simple",
+                    "value": "1"
+                  },
+                  {
+                    "label": "anonymous",
+                    "value": "2"
+                  },
+                  {
+                    "label": "calltracking",
+                    "value": "3"
+                  }
+                ]
+              },
+              "textColor": {
+                "type": "dropdown",
+                "label": "Цвет текста на баннере",
+                "value": "white",
+                "values": [
+                  {
+                    "label": "Белый",
+                    "value": "white"
+                  },
+                  {
+                    "label": "Чёрный",
+                    "value": "black"
+                  }
+                ]
+              },
+              "description": {
+                "type": "multilineString",
+                "label": "Описание слайда",
+                "value": ""
+              },
+              "withShading": {
+                "type": "bool",
+                "label": "Затемнение фона",
+                "value": "true"
+              },
+              "fullTitleWidth": {
+                "type": "bool",
+                "label": "Размещает заголовок по всю строчку",
+                "value": true
+              },
+              "showPhoneButton": {
+                "type": "bool",
+                "label": "Показывать номер телефона при клике на кнопку действия",
+                "value": false
+              },
+              "actionButtonHref": {
+                "type": "linkByPlatform",
+                "label": "Адрес страницы, куда ведёт кнопка",
+                "value": [
+                  {
+                    "value": "ru.avito://1/developmentsCatalog/item/show?itemId=BNXGA613I7",
+                    "platform": "iOS"
+                  },
+                  {
+                    "value": "ru.avito://1/developmentsCatalog/item/show?itemId=BNXGA613I7",
+                    "platform": "Android"
+                  },
+                  {
+                    "value": "https://www.avito.ru/catalog/novostroyki/moskva/zhk_prokshino/1620917?context=H4sIAAAAAAAA_0q0MrSqLraysFJKK8rPDUhMT1WyLrYyNLBSSipKzEspLkhMTlWyrgUEAAD__96VcW8nAAAA",
+                    "platform": "Web"
+                  }
+                ]
+              },
+              "actionButtonText": {
+                "type": "string",
+                "label": "Текст кнопки с действием",
+                "value": ""
+              },
+              "backgroundImageSrc": {
+                "type": "url",
+                "label": "Картинка на фоне",
+                "value": "https://www.avito.st/static/b2b-hub/images/kvJaDDgYyFOKKoPrbJwrV7hGyJUXQFrLuXhejfzh.jpg"
+              },
+              "showTimerAfterTitle": {
+                "type": "bool",
+                "label": "Показывать таймер после заголовка",
+                "value": false
+              },
+              "backgroundImageSrc_4_3": {
+                "type": "url",
+                "label": "Картинка в формате 4:3 (опционально)",
+                "value": ""
+              },
+              "contentBackgroundColor": {
+                "type": "string",
+                "label": "Фон цвета (только для редизайна)"
+              },
+              "descriptionDesktopWidth": {
+                "type": "string",
+                "label": "Ширина описания на десктопе (при ширине окна > 1334px)",
+                "value": "564"
+              },
+              "developerCompanyGroupId": {
+                "type": "string",
+                "label": "ID застройщика - Группы компаний",
+                "value": ""
+              },
+              "descriptionNarrowDesktopWidth": {
+                "type": "string",
+                "label": "Ширина описания на десктопе (при ширине окна 1024-1333px)",
+                "value": "429"
+              }
+            }
+          },
+          {
+            "id": {
+              "type": "number",
+              "value": "slides_lmq3l9hx"
+            },
+            "type": "child",
+            "content": {
+              "order": {
+                "type": "order",
+                "value": [
+                  "title",
+                  "description",
+                  "backgroundImageSrc",
+                  "backgroundImageSrc_4_3",
+                  "textColor",
+                  "contentBackgroundColor",
+                  "actionButtonText",
+                  "actionButtonHref",
+                  "showPhoneButton",
+                  "phone",
+                  "phoneType",
+                  "developerCompanyGroupId",
+                  "withShading",
+                  "showTimerAfterTitle",
+                  "fullTitleWidth",
+                  "descriptionDesktopWidth",
+                  "descriptionNarrowDesktopWidth"
+                ]
+              },
+              "phone": {
+                "type": "string",
+                "label": "Номер телефона на кнопке",
+                "value": ""
+              },
+              "title": {
+                "type": "multilineString",
+                "label": "Заголовок слайда",
+                "value": "Купи и копи!"
+              },
+              "phoneType": {
+                "type": "dropdown",
+                "label": "Тип телефона",
+                "value": "",
+                "values": [
+                  {
+                    "label": "Не выбрано",
+                    "value": ""
+                  },
+                  {
+                    "label": "simple",
+                    "value": "1"
+                  },
+                  {
+                    "label": "anonymous",
+                    "value": "2"
+                  },
+                  {
+                    "label": "calltracking",
+                    "value": "3"
+                  }
+                ]
+              },
+              "textColor": {
+                "type": "dropdown",
+                "label": "Цвет текста на баннере",
+                "value": "white",
+                "values": [
+                  {
+                    "label": "Белый",
+                    "value": "white"
+                  },
+                  {
+                    "label": "Чёрный",
+                    "value": "black"
+                  }
+                ]
+              },
+              "description": {
+                "type": "multilineString",
+                "label": "Описание слайда",
+                "value": "Ипотека от 1 руб./мес."
+              },
+              "withShading": {
+                "type": "bool",
+                "label": "Затемнение фона",
+                "value": "true"
+              },
+              "fullTitleWidth": {
+                "type": "bool",
+                "label": "Размещает заголовок по всю строчку",
+                "value": false
+              },
+              "showPhoneButton": {
+                "type": "bool",
+                "label": "Показывать номер телефона при клике на кнопку действия",
+                "value": false
+              },
+              "actionButtonHref": {
+                "type": "linkByPlatform",
+                "label": "Адрес страницы, куда ведёт кнопка",
+                "value": [
+                  {
+                    "value": "ru.avito://1/developmentsCatalog/item/show?itemId=SSYEAXWBSN",
+                    "platform": "iOS"
+                  },
+                  {
+                    "value": "ru.avito://1/developmentsCatalog/item/show?itemId=SSYEAXWBSN",
+                    "platform": "Android"
+                  },
+                  {
+                    "value": "https://www.avito.ru/catalog/novostroyki/kommunarka/zhk_skandinaviya/44666?context=H4sIAAAAAAAA_0q0MrSqLraysFJKK8rPDUhMT1WyLrYyNLBSSipKzEspLkhMTlWyrgUEAAD__96VcW8nAAAA",
+                    "platform": "Web"
+                  }
+                ]
+              },
+              "actionButtonText": {
+                "type": "string",
+                "label": "Текст кнопки с действием",
+                "value": ""
+              },
+              "backgroundImageSrc": {
+                "type": "url",
+                "label": "Картинка на фоне",
+                "value": "https://www.avito.st/static/b2b-hub/images/lNL90h32CWs8gvcQdTJXiCSSqv7B4yanK4OB88yn.jpg"
+              },
+              "showTimerAfterTitle": {
+                "type": "bool",
+                "label": "Показывать таймер после заголовка",
+                "value": false
+              },
+              "backgroundImageSrc_4_3": {
+                "type": "url",
+                "label": "Картинка в формате 4:3 (опционально)",
+                "value": ""
+              },
+              "contentBackgroundColor": {
+                "type": "string",
+                "label": "Фон цвета (только для редизайна)"
+              },
+              "descriptionDesktopWidth": {
+                "type": "string",
+                "label": "Ширина описания на десктопе (при ширине окна > 1334px)",
+                "value": "564"
+              },
+              "developerCompanyGroupId": {
+                "type": "string",
+                "label": "ID застройщика - Группы компаний",
+                "value": ""
+              },
+              "descriptionNarrowDesktopWidth": {
+                "type": "string",
+                "label": "Ширина описания на десктопе (при ширине окна 1024-1333px)",
+                "value": "429"
+              }
+            }
+          },
+          {
+            "id": {
+              "type": "number",
+              "value": "slides_lb554w1w"
+            },
+            "type": "child",
+            "content": {
+              "order": {
+                "type": "order",
+                "value": [
+                  "title",
+                  "description",
+                  "backgroundImageSrc",
+                  "backgroundImageSrc_4_3",
+                  "textColor",
+                  "contentBackgroundColor",
+                  "actionButtonText",
+                  "actionButtonHref",
+                  "showPhoneButton",
+                  "phone",
+                  "phoneType",
+                  "developerCompanyGroupId",
+                  "withShading",
+                  "showTimerAfterTitle",
+                  "fullTitleWidth",
+                  "descriptionDesktopWidth",
+                  "descriptionNarrowDesktopWidth"
+                ]
+              },
+              "phone": {
+                "type": "string",
+                "label": "Номер телефона на кнопке",
+                "value": ""
+              },
+              "title": {
+                "type": "multilineString",
+                "label": "Заголовок слайда",
+                "value": "Машино-места со скидкой"
+              },
+              "phoneType": {
+                "type": "dropdown",
+                "label": "Тип телефона",
+                "value": "",
+                "values": [
+                  {
+                    "label": "Не выбрано",
+                    "value": ""
+                  },
+                  {
+                    "label": "simple",
+                    "value": "1"
+                  },
+                  {
+                    "label": "anonymous",
+                    "value": "2"
+                  },
+                  {
+                    "label": "calltracking",
+                    "value": "3"
+                  }
+                ]
+              },
+              "textColor": {
+                "type": "dropdown",
+                "label": "Цвет текста на баннере",
+                "value": "white",
+                "values": [
+                  {
+                    "label": "Белый",
+                    "value": "white"
+                  },
+                  {
+                    "label": "Чёрный",
+                    "value": "black"
+                  }
+                ]
+              },
+              "description": {
+                "type": "multilineString",
+                "label": "Описание слайда",
+                "value": "Скидка 10% на ограниченно количество мест для автомобилей*"
+              },
+              "withShading": {
+                "type": "bool",
+                "label": "Затемнение фона",
+                "value": "true"
+              },
+              "fullTitleWidth": {
+                "type": "bool",
+                "label": "Размещает заголовок по всю строчку",
+                "value": false
+              },
+              "showPhoneButton": {
+                "type": "bool",
+                "label": "Показывать номер телефона при клике на кнопку действия",
+                "value": false
+              },
+              "actionButtonHref": {
+                "type": "linkByPlatform",
+                "label": "Адрес страницы, куда ведёт кнопка",
+                "value": [
+                  {
+                    "value": "ru.avito://1/developmentsCatalog/item/show?itemId=WSRA0QEIOU",
+                    "platform": "iOS"
+                  },
+                  {
+                    "value": "ru.avito://1/developmentsCatalog/item/show?itemId=WSRA0QEIOU",
+                    "platform": "Android"
+                  },
+                  {
+                    "value": "https://www.avito.ru/catalog/novostroyki/moskva/zhk_buninskie_kvartaly/5883830?context=H4sIAAAAAAAA_0q0MrSqLraysFJKK8rPDUhMT1WyLrYyNLBSSipKzEspLkhMTlWyrgUEAAD__96VcW8nAAAA",
+                    "platform": "Web"
+                  }
+                ]
+              },
+              "actionButtonText": {
+                "type": "string",
+                "label": "Текст кнопки с действием",
+                "value": ""
+              },
+              "backgroundImageSrc": {
+                "type": "url",
+                "label": "Картинка на фоне",
+                "value": "https://www.avito.st/static/b2b-hub/images/iLxwaBzfIt8aA8oCPZfqB6rotJMnTjeSPKb4V1LB.jpg"
+              },
+              "showTimerAfterTitle": {
+                "type": "bool",
+                "label": "Показывать таймер после заголовка",
+                "value": false
+              },
+              "backgroundImageSrc_4_3": {
+                "type": "url",
+                "label": "Картинка в формате 4:3 (опционально)",
+                "value": ""
+              },
+              "contentBackgroundColor": {
+                "type": "string",
+                "label": "Фон цвета (только для редизайна)"
+              },
+              "descriptionDesktopWidth": {
+                "type": "string",
+                "label": "Ширина описания на десктопе (при ширине окна > 1334px)",
+                "value": "564"
+              },
+              "developerCompanyGroupId": {
+                "type": "string",
+                "label": "ID застройщика - Группы компаний",
+                "value": ""
+              },
+              "descriptionNarrowDesktopWidth": {
+                "type": "string",
+                "label": "Ширина описания на десктопе (при ширине окна 1024-1333px)",
+                "value": "429"
+              }
+            }
+          },
+          {
+            "id": {
+              "type": "number",
+              "value": "slides_lfcogior"
+            },
+            "type": "child",
+            "content": {
+              "order": {
+                "type": "order",
+                "value": [
+                  "title",
+                  "description",
+                  "backgroundImageSrc",
+                  "backgroundImageSrc_4_3",
+                  "textColor",
+                  "contentBackgroundColor",
+                  "actionButtonText",
+                  "actionButtonHref",
+                  "showPhoneButton",
+                  "phone",
+                  "phoneType",
+                  "developerCompanyGroupId",
+                  "withShading",
+                  "showTimerAfterTitle",
+                  "fullTitleWidth",
+                  "descriptionDesktopWidth",
+                  "descriptionNarrowDesktopWidth"
+                ]
+              },
+              "phone": {
+                "type": "string",
+                "label": "Номер телефона на кнопке",
+                "value": ""
+              },
+              "title": {
+                "type": "multilineString",
+                "label": "Заголовок слайда",
+                "value": "До +2,2 млн руб.\nк маткапиталу"
+              },
+              "phoneType": {
+                "type": "dropdown",
+                "label": "Тип телефона",
+                "value": "",
+                "values": [
+                  {
+                    "label": "Не выбрано",
+                    "value": ""
+                  },
+                  {
+                    "label": "simple",
+                    "value": "1"
+                  },
+                  {
+                    "label": "anonymous",
+                    "value": "2"
+                  },
+                  {
+                    "label": "calltracking",
+                    "value": "3"
+                  }
+                ]
+              },
+              "textColor": {
+                "type": "dropdown",
+                "label": "Цвет текста на баннере",
+                "value": "white",
+                "values": [
+                  {
+                    "label": "Белый",
+                    "value": "white"
+                  },
+                  {
+                    "label": "Чёрный",
+                    "value": "black"
+                  }
+                ]
+              },
+              "description": {
+                "type": "multilineString",
+                "label": "Описание слайда",
+                "value": "Заметная прибавка при покупке квартиры в А101\nс использованием материнского капитала"
+              },
+              "withShading": {
+                "type": "bool",
+                "label": "Затемнение фона",
+                "value": "true"
+              },
+              "fullTitleWidth": {
+                "type": "bool",
+                "label": "Размещает заголовок по всю строчку",
+                "value": false
+              },
+              "showPhoneButton": {
+                "type": "bool",
+                "label": "Показывать номер телефона при клике на кнопку действия",
+                "value": false
+              },
+              "actionButtonHref": {
+                "type": "linkByPlatform",
+                "label": "Адрес страницы, куда ведёт кнопка",
+                "value": [
+                  {
+                    "value": "",
+                    "platform": "iOS"
+                  },
+                  {
+                    "value": "",
+                    "platform": "Android"
+                  },
+                  {
+                    "value": "",
+                    "platform": "Web"
+                  }
+                ]
+              },
+              "actionButtonText": {
+                "type": "string",
+                "label": "Текст кнопки с действием",
+                "value": ""
+              },
+              "backgroundImageSrc": {
+                "type": "url",
+                "label": "Картинка на фоне",
+                "value": "https://www.avito.st/static/b2b-hub/images/gdZINVYKjKhISSvKBWzyZoeN3WyfVl44ow8DlnXP.jpg"
+              },
+              "showTimerAfterTitle": {
+                "type": "bool",
+                "label": "Показывать таймер после заголовка",
+                "value": false
+              },
+              "backgroundImageSrc_4_3": {
+                "type": "url",
+                "label": "Картинка в формате 4:3 (опционально)",
+                "value": ""
+              },
+              "contentBackgroundColor": {
+                "type": "string",
+                "label": "Фон цвета (только для редизайна)"
+              },
+              "descriptionDesktopWidth": {
+                "type": "string",
+                "label": "Ширина описания на десктопе (при ширине окна > 1334px)",
+                "value": "564"
+              },
+              "developerCompanyGroupId": {
+                "type": "string",
+                "label": "ID застройщика - Группы компаний",
+                "value": ""
+              },
+              "descriptionNarrowDesktopWidth": {
+                "type": "string",
+                "label": "Ширина описания на десктопе (при ширине окна 1024-1333px)",
+                "value": "429"
+              }
+            }
+          }
+        ],
+        "label": "Переключаемые слайды"
+      },
+      "topLogo": {
+        "type": "url",
+        "label": "Логотип в левом верхнем углу на каждом слайде",
+        "value": ""
+      },
+      "platform": {
+        "type": "dropdown",
+        "label": "Платформа",
+        "value": "all",
+        "values": [
+          {
+            "label": "Все",
+            "value": "all"
+          },
+          {
+            "label": "Только на десктопе",
+            "value": "desktop"
+          },
+          {
+            "label": "Только на мобильных устройствах",
+            "value": "mav"
+          }
+        ]
+      },
+      "isRedesigned": {
+        "type": "bool",
+        "label": "Редизайн",
+        "value": true
+      },
+      "topLogoWidth": {
+        "type": "string",
+        "label": "Ширина логотипа",
+        "value": ""
+      },
+      "topLogoHeight": {
+        "type": "string",
+        "label": "Высота логотипа",
+        "value": ""
+      }
+    }
+  },
+  {
+    "id": 1707737,
+    "component": "bsAnchor",
+    "platform": "all",
+    "authMode": "all",
+    "version": 1,
+    "content": {
+      "order": {
+        "type": "order",
+        "value": [
+          "anchor"
+        ]
+      },
+      "anchor": {
+        "type": "string",
+        "label": "Якорь",
+        "value": "1"
+      }
+    }
+  },
+  {
+    "id": 1707738,
+    "component": "bsReFilteredSnippets",
+    "platform": "all",
+    "authMode": "all",
+    "version": 3,
+    "content": {
+      "order": {
+        "type": "order",
+        "value": [
+          "blockTitle",
+          "isRedesigned",
+          "isRedesignedApps",
+          "phone",
+          "phoneType",
+          "developerCompanyGroupId",
+          "xlDevelopments"
+        ]
+      },
+      "phone": {
+        "type": "string",
+        "label": "Номер телефона",
+        "value": ""
+      },
+      "platform": {
+        "type": "dropdown",
+        "label": "Платформа",
+        "value": "all",
+        "values": [
+          {
+            "label": "Все",
+            "value": "all"
+          },
+          {
+            "label": "Только на десктопе",
+            "value": "desktop"
+          },
+          {
+            "label": "Только на мобильных устройствах",
+            "value": "mav"
+          }
+        ]
+      },
+      "phoneType": {
+        "type": "dropdown",
+        "label": "Тип телефона",
+        "value": "",
+        "values": [
+          {
+            "label": "Не выбрано",
+            "value": ""
+          },
+          {
+            "label": "simple",
+            "value": "1"
+          },
+          {
+            "label": "anonymous",
+            "value": "2"
+          },
+          {
+            "label": "calltracking",
+            "value": "3"
+          }
+        ]
+      },
+      "blockTitle": {
+        "type": "text",
+        "label": "Заголовок блока",
+        "value": "Новостройки от ГК «А101»"
+      },
+      "isRedesigned": {
+        "type": "bool",
+        "label": "Редизайн (десктоп и мав)",
+        "value": true
+      },
+      "xlDevelopments": {
+        "type": "wrapper",
+        "items": [],
+        "label": "Роскошные сниппеты"
+      },
+      "isRedesignedApps": {
+        "type": "bool",
+        "label": "Редизайн (приложения)",
+        "value": true
+      },
+      "developerCompanyGroupId": {
+        "type": "string",
+        "label": "ID застройщика - Группы компаний",
+        "value": ""
+      }
+    }
+  },
+  {
+    "id": 1707739,
+    "component": "BrandSpaceNewsBlock",
+    "platform": "all",
+    "authMode": "all",
+    "version": 2,
+    "content": {
+      "cards": {
+        "type": "wrapper",
+        "items": [
+          {
+            "id": {
+              "type": "string",
+              "value": "1"
+            },
+            "type": "child",
+            "content": {
+              "link": {
+                "type": "linkByPlatform",
+                "label": "Action-ссылка",
+                "value": [
+                  {
+                    "value": "",
+                    "platform": "iOS"
+                  },
+                  {
+                    "value": "",
+                    "platform": "Android"
+                  },
+                  {
+                    "value": "",
+                    "platform": "Web"
+                  }
+                ]
+              },
+              "order": {
+                "type": "order",
+                "value": [
+                  "imageSrc",
+                  "title",
+                  "description",
+                  "actionText",
+                  "link"
+                ]
+              },
+              "title": {
+                "type": "string",
+                "label": "Заголовок карточки",
+                "value": "Скидка до 12% на квартиры*"
+              },
+              "imageSrc": {
+                "type": "url",
+                "label": "Ссылка на картинку",
+                "value": "https://www.avito.st/static/b2b-hub/images/m5nqaK1cR3XA4GIAoNoiFSD7xRH2qPmeSwkpaq8T.jpg"
+              },
+              "actionText": {
+                "type": "string",
+                "label": "Текст action-ссылки",
+                "value": ""
+              },
+              "description": {
+                "type": "string",
+                "label": "Описание карточки",
+                "value": ""
+              }
+            }
+          },
+          {
+            "id": {
+              "type": "number",
+              "value": "cards_m1sz5o4f"
+            },
+            "type": "child",
+            "content": {
+              "link": {
+                "type": "linkByPlatform",
+                "label": "Action-ссылка",
+                "value": [
+                  {
+                    "value": "",
+                    "platform": "iOS"
+                  },
+                  {
+                    "value": "",
+                    "platform": "Android"
+                  },
+                  {
+                    "value": "",
+                    "platform": "Web"
+                  }
+                ]
+              },
+              "order": {
+                "type": "order",
+                "value": [
+                  "imageSrc",
+                  "title",
+                  "description",
+                  "actionText",
+                  "link"
+                ]
+              },
+              "title": {
+                "type": "string",
+                "label": "Заголовок карточки",
+                "value": "Ипотека за 1 рубль в месяц**"
+              },
+              "imageSrc": {
+                "type": "url",
+                "label": "Ссылка на картинку",
+                "value": "https://www.avito.st/static/b2b-hub/images/RNMJzgdoipknAanNsL5phseEyP46rwRinH78O4oA.jpg"
+              },
+              "actionText": {
+                "type": "string",
+                "label": "Текст action-ссылки",
+                "value": ""
+              },
+              "description": {
+                "type": "string",
+                "label": "Описание карточки",
+                "value": ""
+              }
+            }
+          },
+          {
+            "id": {
+              "type": "number",
+              "value": "cards_m1sz62dz"
+            },
+            "type": "child",
+            "content": {
+              "link": {
+                "type": "linkByPlatform",
+                "label": "Action-ссылка",
+                "value": [
+                  {
+                    "value": "",
+                    "platform": "iOS"
+                  },
+                  {
+                    "value": "",
+                    "platform": "Android"
+                  },
+                  {
+                    "value": "",
+                    "platform": "Web"
+                  }
+                ]
+              },
+              "order": {
+                "type": "order",
+                "value": [
+                  "imageSrc",
+                  "title",
+                  "description",
+                  "actionText",
+                  "link"
+                ]
+              },
+              "title": {
+                "type": "string",
+                "label": "Заголовок карточки",
+                "value": "Онлайн покупка***"
+              },
+              "imageSrc": {
+                "type": "url",
+                "label": "Ссылка на картинку",
+                "value": "https://www.avito.st/static/b2b-hub/images/kx7n2bhc0dDNOHt2ZGyjduLzlckfmDtz0Xk9o3wk.jpg"
+              },
+              "actionText": {
+                "type": "string",
+                "label": "Текст action-ссылки",
+                "value": ""
+              },
+              "description": {
+                "type": "string",
+                "label": "Описание карточки",
+                "value": ""
+              }
+            }
+          }
+        ],
+        "label": "Карточки новостей"
+      },
+      "order": {
+        "type": "order",
+        "value": [
+          "blockTitle",
+          "cards"
+        ]
+      },
+      "platform": {
+        "type": "dropdown",
+        "label": "Платформа",
+        "value": "all",
+        "values": [
+          {
+            "label": "Все",
+            "value": "all"
+          },
+          {
+            "label": "Только на десктопе",
+            "value": "desktop"
+          },
+          {
+            "label": "Только на мобильных устройствах",
+            "value": "mav"
+          }
+        ]
+      },
+      "blockTitle": {
+        "type": "text",
+        "label": "Заголовок блока",
+        "value": "Акции"
+      }
+    }
+  },
+  {
+    "id": 1707740,
+    "component": "bsAnchor",
+    "platform": "all",
+    "authMode": "all",
+    "version": 1,
+    "content": {
+      "order": {
+        "type": "order",
+        "value": [
+          "anchor"
+        ]
+      },
+      "anchor": {
+        "type": "string",
+        "label": "Якорь",
+        "value": "2"
+      },
+      "platform": {
+        "type": "dropdown",
+        "label": "Платформа",
+        "value": "all",
+        "values": [
+          {
+            "label": "Все",
+            "value": "all"
+          },
+          {
+            "label": "Только на десктопе",
+            "value": "desktop"
+          },
+          {
+            "label": "Только на мобильных устройствах",
+            "value": "mav"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 1707741,
+    "component": "bsAboutBrand",
+    "platform": "all",
+    "authMode": "all",
+    "version": 1,
+    "content": {
+      "order": {
+        "type": "order",
+        "value": [
+          "blockTitle",
+          "imageSrc",
+          "paragraphs"
+        ]
+      },
+      "imageSrc": {
+        "type": "url",
+        "label": "Картинка",
+        "value": "https://www.avito.st/static/b2b-hub/images/PBnUhWVAIrfK7qYtbsHkKP7PSmsSBtvqiWVKvLFf.jpg"
+      },
+      "platform": {
+        "type": "dropdown",
+        "label": "Платформа",
+        "value": "all",
+        "values": [
+          {
+            "label": "Все",
+            "value": "all"
+          },
+          {
+            "label": "Только на десктопе",
+            "value": "desktop"
+          },
+          {
+            "label": "Только на мобильных устройствах",
+            "value": "mav"
+          }
+        ]
+      },
+      "blockTitle": {
+        "type": "string",
+        "label": "Заголовок блока",
+        "value": "Группа компаний «А101»"
+      },
+      "paragraphs": {
+        "type": "wrapper",
+        "items": [
+          {
+            "id": {
+              "type": "number",
+              "value": 1
+            },
+            "type": "child",
+            "content": {
+              "order": {
+                "type": "order",
+                "value": [
+                  "paragraphTitle",
+                  "paragraphBody"
+                ]
+              },
+              "paragraphBody": {
+                "type": "multilineString",
+                "label": "Текст абзаца",
+                "value": "Входит в перечень системообразующих предприятий российской экономики. \nВ 2022 г. введено в эксплуатацию более 827 тыс. м².\nПортфель текущих проектов в Москве и Ленинградской области – 2,1 млн м². \n\nРайоны ГК «А101» строятся в пешей доступности от метро, с выездами на крупные автотрассы. Авторская архитектура, продуманное благоустройство, развитая инфраструктура, уникальные школы и сады по собственным проектам. Здесь можно выбрать квартиру с террасой, мастер-спальней или кладовой."
+              },
+              "paragraphTitle": {
+                "type": "string",
+                "label": "Заголовок абзаца",
+                "value": "Один из крупнейших девелоперов"
+              }
+            }
+          }
+        ],
+        "label": "Текст блока"
+      }
+    }
+  },
+  {
+    "id": 1707742,
+    "component": "bsContactUs",
+    "platform": "all",
+    "authMode": "all",
+    "version": 1,
+    "content": {
+      "order": {
+        "value": [
+          "title",
+          "description",
+          "backgroundColor",
+          "textColor",
+          "showPhoneButton",
+          "phone",
+          "phoneType",
+          "developerCompanyGroupId",
+          "showConsultationForm"
+        ]
+      },
+      "phone": {
+        "type": "string",
+        "label": "Номер телефона",
+        "value": ""
+      },
+      "title": {
+        "type": "string",
+        "label": "Заголовок",
+        "value": "Свяжитесь с нами"
+      },
+      "platform": {
+        "type": "dropdown",
+        "label": "Платформа",
+        "value": "all",
+        "values": [
+          {
+            "label": "Все",
+            "value": "all"
+          },
+          {
+            "label": "Только на десктопе",
+            "value": "desktop"
+          },
+          {
+            "label": "Только на мобильных устройствах",
+            "value": "mav"
+          }
+        ]
+      },
+      "phoneType": {
+        "type": "dropdown",
+        "label": "Тип телефона",
+        "value": "",
+        "values": [
+          {
+            "label": "Не выбрано",
+            "value": ""
+          },
+          {
+            "label": "simple",
+            "value": "1"
+          },
+          {
+            "label": "anonymous",
+            "value": "2"
+          },
+          {
+            "label": "calltracking",
+            "value": "3"
+          }
+        ]
+      },
+      "textColor": {
+        "type": "string",
+        "label": "Цвет текста",
+        "value": "#fff"
+      },
+      "description": {
+        "type": "string",
+        "label": "Описание",
+        "value": "Ответим на все ваши вопросы и расскажем о наших актуальных скидках и спецпредложениях."
+      },
+      "backgroundColor": {
+        "type": "string",
+        "label": "Цвет фона",
+        "value": "#E53935"
+      },
+      "showPhoneButton": {
+        "type": "bool",
+        "label": "Показать кнопку с телефоном",
+        "value": true
+      },
+      "showConsultationForm": {
+        "type": "bool",
+        "label": "Показать кнопку с телефоном",
+        "value": true
+      },
+      "developerCompanyGroupId": {
+        "type": "string",
+        "label": "ID застройщика - Группы компаний",
+        "value": ""
+      }
+    }
+  },
+  {
+    "id": 1707743,
+    "component": "BrandSpaceLegal",
+    "platform": "all",
+    "authMode": "all",
+    "version": 2,
+    "content": {
+      "text": {
+        "type": "multilineString",
+        "label": "Текст",
+        "value": "Реклама. Рекламодатель ООО \"А101\"\n\n*Предложение действительно с 01.12.24 по 31.12.24, не суммируется с другими акциями. Не является публичной офертой. ПД на сайте наш.дом.рф.\n\n***Не хотите выходить из дома, но привыкли всё контролировать лично? Напоминаем, вы всегда можете воспользоваться услугой платного онлайн-бронирования.\n\n****Как вам такое предложение от СберБанка? Новая ипотечная программа с ежемесячным платежом от 1 рубля. На весь период строительства вашей новой квартиры!\n\n*Реклама. 214-ФЗ. Полная стоимость кредита от 14,731% - 31,304%. Застройщик ООО «Специализированный застройщик «А101». Ипотеку с процентной ставкой 13,9% годовых с условием субсидирования процентной ставки застройщиком предоставляет ПАО Сбербанк при страховании жизни и здоровья, без страхования жизни и здоровья ставка составит 14,9%. Генеральная лицензия 1481 от 11.08.2015. Минимальный первоначальный взнос от 15,1%. Сумма кредита от 500 тыс. руб. до 100 млн руб. Срок кредитования от 1 года до 30 лет. Выдача кредита осуществляется частями: первая часть перечисляется в размере 100 руб. после регистрации договора долевого участия в строительстве, вторая часть – за 2 мес. до даты ввода объекта в эксплуатацию, но не позднее 36 мес. с даты выдачи первого транша. Предложение действительно с 01.12.24 по 31.12.24, не является публичной офертой. Проектные декларации на сайте наш.дом.рф, полный список страховых компаний, подробности и условия предоставления ипотеки на сайте застройщика. *Платеж рассчитан по ставке 13,9% годовых на период пользования первой частью кредита\n\n\n\n\nerid: 2SDnjdiXfXW"
+      },
+      "order": {
+        "type": "order",
+        "value": [
+          "isRedesigned",
+          "text"
+        ]
+      },
+      "platform": {
+        "type": "dropdown",
+        "label": "Платформа",
+        "value": "all",
+        "values": [
+          {
+            "label": "Все",
+            "value": "all"
+          },
+          {
+            "label": "Только на десктопе",
+            "value": "desktop"
+          },
+          {
+            "label": "Только на мобильных устройствах",
+            "value": "mav"
+          }
+        ]
+      },
+      "isRedesigned": {
+        "type": "bool",
+        "label": "Редизайн",
+        "value": true
+      }
+    }
+  }
+]
